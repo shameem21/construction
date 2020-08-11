@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user.master.cs" Inherits="user" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<!-- CuFon ends -->
+
+</head>
+<body>
+<form id="form1" runat="server">
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo"><h1><a href="index.html"><span>Construct</span> world <small>Contact.</small></a></h1></div>
+      <div class="menu">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="body">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="FBG">
+    <div class="FBG_resize">
+      <div class="clr"><asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            onmenuitemclick="Menu1_MenuItemClick">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/usrhom.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="|| Engineers" Value="Engineers" NavigateUrl="~/usreng.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="|| Plans" Value="Plans" NavigateUrl="~/usrplan.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="|| Workers" Value="Workers">
+                    <asp:MenuItem NavigateUrl="~/usrworkerbook.aspx" Text="Single Booking" 
+                        Value="Single Booking"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrmasswrksbooking.aspx" Text="Mass booking" 
+                        Value="Mass booking"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrcanclworker.aspx" Text="Cancel/Edit Booking" 
+                        Value="Cancel Booking"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrmasscancel.aspx" 
+                        Text="Cancel/Edit mass booking" Value="Cancel/Edit mass booking">
+                    </asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrworkerstatus.aspx" Text="View Booking Status" 
+                        Value="View Booking Status"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrmassstatus.aspx" 
+                        Text="View Mass booking Status" Value="View Mass booking Status">
+                    </asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="|| Materials" Value="Materials">
+                    <asp:MenuItem Text="Booking" Value="Booking" NavigateUrl="~/usrmatrls.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="Cancel Booking" Value="Cancel Booking"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/usrmtrlstatus.aspx" Text="View Booking Status" 
+                        Value="View Booking Status"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="|| Complete Contract" Value="Complete Contract">
+                    <asp:MenuItem Text="Enquiry" Value="Enquiry" 
+                        NavigateUrl="~/usrcontractenquiry.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="View Enquiry status" Value="View Enquiry status" 
+                        NavigateUrl="~/usrenquirystatus.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/usrchangepwd.aspx" Text="|| Change Password" 
+                    Value="|| Change Password"></asp:MenuItem>
+                <asp:MenuItem Text="|| Logout" Value="Logout" NavigateUrl="~/login.aspx"></asp:MenuItem>
+            </Items>
+        </asp:Menu></div>
+    </div>
+  </div>
+  <div class="footer">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  </div>
+</div>
+ </form>
+</body>
+</html>
+
+

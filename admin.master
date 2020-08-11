@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!-- CuFon: Enables smooth pretty custom font rendering. 100% SEO friendly. To disable, remove this section -->
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/arial.js"></script>
+<script type="text/javascript" src="js/cuf_run.js"></script>
+<!-- CuFon ends -->
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo"><h1><a href="index.html"><span>Construct</span> world <small>Contact.</small></a></h1></div>
+      <div class="menu">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="body">
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="FBG">
+    <div class="FBG_resize">
+      <div class="clr">
+        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+              onmenuitemclick="Menu1_MenuItemClick">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="|| Engineers" Value="Engineers" 
+                    NavigateUrl="~/adengview.aspx">
+                    <asp:MenuItem NavigateUrl="~/engd.aspx" Text="Add" Value="Add"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/adengedit.aspx" Text="Edit/Remove" 
+                        Value="Edit/Remove"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="|| Workers" Value="Workers">
+                    <asp:MenuItem NavigateUrl="~/wrkd.aspx" Text="Add" Value="Add"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/adwrkrview.aspx" Text="Edit/Remove" 
+                        Value="Edit/Remove"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/adusersview.aspx" Text="|| View Users" 
+                    Value="View Users"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/engplans.aspx" Text="|| Plan Models" 
+                    Value="Plan Models"></asp:MenuItem>
+                <asp:MenuItem Text="|| Materials" Value="Materials">
+                    <asp:MenuItem NavigateUrl="~/admat.aspx" Text="Add Material" 
+                        Value="Add Material"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/admatrledit.aspx" Text="Edit/Remove" 
+                        Value="Edit/Remove"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="|| Materils Booking" Value="Booking" 
+                    NavigateUrl="~/admaterilabooking.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="|| Worker Booking" Value="Worker Booking" 
+                    NavigateUrl="~/adbooking.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/admassworkbook.aspx" Text="|| Mass Booking" 
+                    Value="Mass Booking"></asp:MenuItem>
+                <asp:MenuItem Text="|| Work Enquiry" Value="Work Enquiry" 
+                    NavigateUrl="~/adenquiry.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/adchangepassword.aspx" Text="|| Change Password" 
+                    Value="|| Change Password"></asp:MenuItem>
+                <asp:MenuItem Text="|| Logout" Value="Logout" NavigateUrl="~/login.aspx">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu></div>
+    </div>
+  </div>
+  <div class="footer">
+    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+  </div>
+</div>
+ </form>
+</body>
+</html>
+
